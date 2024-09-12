@@ -2,6 +2,7 @@ package lk.ijse.spring;
 
 import lk.ijse.spring.config.AppConfig;
 import lk.ijse.spring.pojo.PojoOne;
+import lk.ijse.spring.pojo.PojoTwo;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class AppInitializer {
@@ -15,5 +16,8 @@ public class AppInitializer {
         System.out.println(pojoOne);
 
         ctx.registerShutdownHook();
+
+        PojoTwo pojoTwo = ctx.getBean(PojoTwo.class);
+        System.out.println(pojoTwo);
     }
 }
