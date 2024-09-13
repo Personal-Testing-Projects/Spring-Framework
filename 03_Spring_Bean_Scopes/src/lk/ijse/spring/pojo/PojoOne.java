@@ -1,4 +1,4 @@
-package spring.pojo;
+package lk.ijse.spring.pojo;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.*;
@@ -6,10 +6,10 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 public class PojoOne implements BeanNameAware, BeanFactoryAware, ApplicationContextAware, InitializingBean, DisposableBean {
     public PojoOne() {
-        System.out.println("PojoOne : Instantiated");
+        System.out.println("PojoOne : Instantiatedddddddd");
     }
 
     @Override
