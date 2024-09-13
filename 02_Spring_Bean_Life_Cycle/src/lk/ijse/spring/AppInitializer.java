@@ -2,6 +2,7 @@ package lk.ijse.spring;
 
 import lk.ijse.spring.config.AppConfig;
 import lk.ijse.spring.pojo.PojoOne;
+import lk.ijse.spring.pojo.PojoThree;
 import lk.ijse.spring.pojo.PojoTwo;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -19,5 +20,8 @@ public class AppInitializer {
 
         PojoTwo pojoTwo = ctx.getBean(PojoTwo.class);
         System.out.println(pojoTwo);
+
+        PojoThree pojoThree = ctx.getBean(PojoThree.class);
+        System.out.println(pojoThree);
     }
 }
